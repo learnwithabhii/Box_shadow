@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box&text_shadow</title>
+    <style>
+        
+        .container{
+            display: flex;
+        }
+        .card{
+            margin: 20px;
+            padding:25px;
+            border: 2px solid red;
+            border-radius: 4px;
+            background-color: aqua;
+            text-align: justify;
+            box-shadow: 10px 14px 10px 3px rgb(208, 155, 134);
+        }
+        #two{
+             /* first for x second for y and third for radius opacity and the last for spread radius */
+            box-shadow: -10px -14px 4px 2px rgb(108, 223, 216);
+color: rgb(52, 61, 62);
+            box-shadow: inset 3px;
+            text-shadow: 4px 2px rgb(202, 150, 52);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad fugiat et omnis quibusdam cum asperiores
+            quisquam aut quasi reprehenderit!
+        </div>
+        <div class="card" id="two">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad fugiat et omnis quibusdam cum asperiores
+            quisquam aut quasi reprehenderit!
+        </div> 
+        <div class="card" id="three">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ad fugiat et omnis quibusdam cum asperiores
+            quisquam aut quasi reprehenderit!
+        </div>
+    </div>
+
+</body>
+
+</html>
